@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 sudo apt-get install build-essential wget -y
-wget https://download.libsodium.org/libsodium/releases/LATEST.tar.gz
+wget --no-check-certificate -N https://download.libsodium.org/libsodium/releases/LATEST.tar.gz
 cd libsodium*
 ./configure
 make -j8 && make install
